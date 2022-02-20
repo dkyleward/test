@@ -1,0 +1,57 @@
+name: "Triangle Regional Model G2 Documentation"
+output_dir: "."
+navbar:
+  title: "TRMG2"
+  left:
+    - text: Databases
+      menu:
+        - text: "TAZs and SE Data"
+          href: tazs_and_se_data.html
+        - text: "Networks"
+          href: networks.html
+    - text: Surveys
+      menu:
+        - text: "Household Survey"
+          href: survey_processing.html
+        - text: "On-Board Survey"
+          href: obs_processing.html
+    - text: Resident Models
+      menu:
+        - text: "Synthesis"
+          href: population_synthesis.html
+        - text: "Auto Ownership"
+          href: auto_ownership.html
+        - text: "Production"
+          href: resident_production.html
+        - text: "Time of Day"
+          href: time_of_day.html
+        - text: "Non-motorized"
+          href: resident_nonmotorized.html
+        - text: "Parking"
+          href: parking.html
+        - text: "Destination Choice"
+          href: resident_dest_choice.html
+        - text: "Non-homebased"
+          href: nhb.html
+    - text: Other Models
+      menu:
+        - text: "Accessibility"
+          href: accessibility.html
+        - text: "Airport"
+          href: airport.html
+        - text: "Internal/External"
+          href: ieei.html
+        - text: "Commercial Vehicles"
+          href: commercial_vehicles.html
+        - text: "Roadway Assignment"
+          href: assignment_roadway.html
+  right:
+    - text: "Github"
+      href: https://github.com/Caliper-Corporation/TRMG2
+output:
+    rmdformats::readthedown:
+      toc_depth: 4
+      menu: "static"
+      includes:
+          after_body: include/after_body.html
+      css: styles.css
